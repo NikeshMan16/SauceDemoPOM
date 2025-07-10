@@ -1,0 +1,23 @@
+[project]
+name = "saucedemo"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "allure-pytest>=2.14.3",
+    "appium-python-client>=5.1.1",
+    "pytest>=8.4.1",
+    "pytest-assume>=2.4.3",
+    "selenium>=4.33.0",
+]
+
+[tool.ruff]
+line-length = 300
+
+[tool.pytest.ini_options]
+pythonpath = "."
+minversion = "7.0"
+addopts = "-v --tb=short  --maxfail=200 --alluredir=reports/allure-results"
+testpaths = ["tests"]
+markers = ["e2e: mark as end-to-end test"]

@@ -1,0 +1,11 @@
+{
+    "environment": "testing",
+    "browser": "chrome",
+    "browser_options": {
+        "chrome": [],
+        "firefox": [],
+        "edge": [],
+        "chromium": [],
+        "brave": []
+    }
+}
